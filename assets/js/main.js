@@ -26,7 +26,7 @@
 
 
 	// load artciles html
-	$( "#work" ).load( "../../work.html #content" );
+	$( "#work" ).append($("<div>").load( "../../work.html #content" ));
 
 
 	// Play initial animations on page load.
