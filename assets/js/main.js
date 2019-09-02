@@ -24,6 +24,17 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
+	// handle submit contact form
+	$ ("#contact-form").submit(function(event){
+		event.preventDefault();
+		emailjs.sendForm('gmail', 'template_KFXACPFS', '#contact-form').
+			then(function (response){
+					console.log("SUCCESS", response.status, response.text);
+				},function(error){
+					console.log("FAILED...",error);
+				}
+			);
+	});
 
 	// load artciles html
 	$( "#work" ).append($("<div>").load( "../../work.html #content" ));

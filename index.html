@@ -13,6 +13,12 @@
 		<link rel = "icon" href ="./images/writing.png" 
         type = "image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+		<script type="text/javascript">
+   			(function(){
+      			emailjs.init("user_kgnkV3RCs6IRx4fEJAAUt");
+   			})();
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -65,7 +71,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form id="contact-form" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
