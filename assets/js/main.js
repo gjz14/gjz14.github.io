@@ -32,10 +32,10 @@
 			from_email: $(this).find("#email").val(),
 			message:  $(this).find("#message").val(),
 		};
-		console.log(template_params);
 		emailjs.send('gmail', 'template_KFXACPFS', template_params).
 			then(function (response){
 					console.log("SUCCESS", response.status, response.text);
+
 				},function(error){
 					console.log("FAILED...",error);
 				}
