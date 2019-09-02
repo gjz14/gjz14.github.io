@@ -24,6 +24,11 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
+
+	// load artciles html
+	$( "#work" ).load( "../../work.html #content" );
+
+
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
