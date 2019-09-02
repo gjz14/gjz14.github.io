@@ -28,9 +28,9 @@
 	$ ("#contact-form").submit(function(event){
 		event.preventDefault();
 		var template_params = {
-			from_name: $(this).find("name").val(),
-			from_email: $(this).find("email").val(),
-			message:  $(this).find("message").val(),
+			from_name: $(this).find("#name").val(),
+			from_email: $(this).find("#email").val(),
+			message:  $(this).find("#message").val(),
 		};
 		console.log(template_params);
 		emailjs.send('gmail', 'template_KFXACPFS', template_params).
