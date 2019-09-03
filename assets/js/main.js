@@ -46,6 +46,7 @@
 	// load artciles html
 	$( "#work" ).append($("<div>").load( "../../work.html #content" ));
 
+	$( "#posts" ).append($("<div>").load( "../../posts.html #content" ));
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
