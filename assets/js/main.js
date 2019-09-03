@@ -35,7 +35,8 @@
 		emailjs.send('gmail', 'template_KFXACPFS', template_params).
 			then(function (response){
 					console.log("SUCCESS", response.status, response.text);
-
+					$(".alert-success").show();
+					setTimeout(function() { $(".alert-success").hide(); }, 5000);
 				},function(error){
 					console.log("FAILED...",error);
 				}
